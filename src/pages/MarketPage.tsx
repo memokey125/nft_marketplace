@@ -42,20 +42,18 @@ export const MarketPage = ({ text }: props) => {
   console.log('isMobile', isMobile());
 
   return (
-    <>
+    <div>
       <div id="marketpage">
-        <div className="title">
-          <p>Market</p>
+        <div className="title py-3 px-2">
+          <p className='px-32'>Market</p>
         </div>
-        <div className='market-content'>
-          <div className='btn-menu'>
-            <div className='left'>
-              <div className='active'>Official Store</div>
-              <div>Community Market</div>
-            </div>
-            <div className='right'>
-              <div>SpaceY 2025</div>
-            </div>
+        <div className='market-content mx-32 p-12 flex justify-between'>
+          <ul className="flex gap-1">
+            <li className='px-9 pt-3 pb-6 active'>Official Store</li>
+            <li className='px-9 pt-3 pb-6'>Community Market</li>
+          </ul>
+          <div>
+            <div className="mt-1 px-24 py-2 bg-color">SpaceY 2025</div>
           </div>
         </div>
         {isMobile() ? (
@@ -66,13 +64,13 @@ export const MarketPage = ({ text }: props) => {
             <PartnersContainer />
           </>
         ) : (
-          <>
+          <div className='px-32'>
             <BuyContainer leftSide={true} name={'buyLand'} items={items_land} brand={blue_011} desc={'All buildings can only be held on a Land where you can customize and develop your own space.'} />
             <BuyContainer leftSide={false} name={'buyLootBox'} items={items_lootbox} brand={Chest1} desc={'You can get all these exclusive Tower and Building NFTs from the limited Loot Boxes.'} />
-          </>
+          </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

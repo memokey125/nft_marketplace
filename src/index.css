@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: 'Chakra Petch';
+}
+
 :root {
   --background: #040b13;
   --danger: #ffa900;

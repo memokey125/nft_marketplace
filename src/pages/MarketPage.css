@@ -2,14 +2,23 @@
   height: 62px;
   width: 100%;
   background: linear-gradient(90deg, rgba(73, 62, 143, 0.5) 1.95%, rgba(213, 33, 127, 0.5) 100%);
-  padding: 18px 60px 16px;
 }
 .title p{
   font-weight: 400;
   font-size: 24px; 
 }
-.market-content .btn-menu{
-  display: inline-flex;
+.market-content .bg-color{
+  background: linear-gradient(270deg, #761F4F 0%, #2E2041 46.88%, #322D57 100%);
+  border-radius: 3px;
+}
+.market-content li.active {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  background: url(../images/pngs/Group 1214.png) no-repeat;
+  background-size: 100% 100%;
+  
 }
 
 .market-content .btn-menu > div > div{
