@@ -1,0 +1,33 @@
+.title{
+  height: 62px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(73, 62, 143, 0.5) 1.95%, rgba(213, 33, 127, 0.5) 100%);
+  padding: 18px 60px 16px;
+}
+.title p{
+  font-weight: 400;
+  font-size: 24px; 
+}
+.market-content .btn-menu{
+  display: inline-flex;
+}
+
+.market-content .btn-menu > div > div{
+  padding: 14px 36px;
+  display: inline-block;
+}
+
+.market-content .btn-menu > div > div.active{
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #1B1C1E 124.19%), linear-gradient(180deg, rgba(213, 33, 127, 0.8) 4.61%, rgba(72, 62, 143, 0.8) 100%);
+  border: 1px solid #000000;
+  filter: blur(20px);
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.market-content .btn-menu .left{
+  flex: left;
+}
+
+.market-content .btn-menu .right{
+  position: absolute;
+  right: 20px;
+}
